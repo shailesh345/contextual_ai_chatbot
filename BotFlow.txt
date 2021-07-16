@@ -1,0 +1,22 @@
+::cmd_callback2_1
+msg1
+::cmd_callback2_2
+msg2
+::cmd_callback2_3
+msg3
+BLOCK2
+CALL_BACK_CMD::cmd_callback2_1::cmd_callback2_2::cmd_callback2_3
+::cmd_callback3_btnmsg
+Want to move ahead?
+::cmd_callback3_1
+<button class="cmdText_Button" data-cmd="BLOCK4">continue</button>
+BLOCK3
+CALL_BACK_CMD::cmd_callback3_btnmsg::cmd_callback3_1
+::cmd_callback5_1
+Thank you
+::cmd_callback5_2
+Once you will receive your product then rebate will be credited in your account.
+::cmd_callback5_3
+Have a good day
+BLOCK5
+CALL_BACK_CMD::cmd_callback5_1::cmd_callback5_2::cmd_callback5_3

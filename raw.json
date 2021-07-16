@@ -1,0 +1,168 @@
+{
+    "drawflow": {
+      "Home": {
+        "data": {
+          "1": {
+            "id": 1,
+            "name": "start",
+            "data": {},
+            "class": "start",
+            "html": "",
+            "typenode": false,
+            "inputs": {},
+            "outputs": {
+              "output_1": {
+                "connections": [
+                  {
+                    "node": "2",
+                    "output": "input_1"
+                  }
+                ]
+              }
+            },
+            "pos_x": 125,
+            "pos_y": 56
+          },
+          "2": {
+            "id": 2,
+            "name": "send_message",
+            "data": {
+              "block_title": "Welcome message",
+              "text": {
+                "1": "msg1 ",
+                "2": "msg2 ",
+                "3": "msg3 "
+              }
+            },
+            "class": "send_message",
+            "html": "",
+            "typenode": false,
+            "inputs": {
+              "input_1": {
+                "connections": [
+                  {
+                    "node": "1",
+                    "input": "output_1"
+                  }
+                ]
+              }
+            },
+            "outputs": {
+              "output_1": {
+                "connections": [
+                  {
+                    "node": "3",
+                    "output": "input_1"
+                  }
+                ]
+              }
+            },
+            "pos_x": 164,
+            "pos_y": 164
+          },
+          "3": {
+            "id": 3,
+            "name": "bot_buttons",
+            "data": {
+              "block_title": "Continue",
+              "button_message": " Want to move ahead?",
+              "button_title": {"1":"continue"}
+            },
+            "class": "bot_buttons",
+            "html": "",
+            "typenode": false,
+            "inputs": {
+              "input_1": {
+                "connections": [
+                  {
+                    "node": "2",
+                    "input": "output_1"
+                  }
+                ]
+              }
+            },
+            "outputs": {
+              "output_1": {
+                "connections": [
+                  {
+                    "node": "4",
+                    "output": "input_1"
+                  }
+                ]
+              }
+            },
+            "pos_x": 184,
+            "pos_y": 383
+          },
+          "4": {
+            "id": 4,
+            "name": "user_input",
+            "data": {
+              "block_title": "Enter Amazon Order ID",
+              "question": "What is your amazon order id?",
+              "csinfi": "infi_amz_order_id",
+              "error": "Invalid order id",
+              "input_var": "amz-order"
+            },
+            "class": "user_input",
+            "html": " ",
+            "typenode": false,
+            "inputs": {
+              "input_1": {
+                "connections": [
+                  {
+                    "node": "3",
+                    "input": "output_1"
+                  }
+                ]
+              }
+            },
+            "outputs": {
+              "output_1": {
+                "connections": [
+                  {
+                    "node": "5",
+                    "output": "input_1"
+                  }
+                ]
+              }
+            },
+            "pos_x": 526,
+            "pos_y": 381
+          },
+          "5": {
+            "id": 5,
+            "name": "send_message",
+            "data": {
+              "block_title": "Success",
+              "text": {
+                "1": " Thank you",
+                "2": "Once you will receive your product then rebate will be credited in your account. ",
+                "3": "Have a good day "
+              }
+            },
+            "class": "send_message",
+            "html": " ",
+            "typenode": false,
+            "inputs": {
+              "input_1": {
+                "connections": [
+                  {
+                    "node": "4",
+                    "input": "output_1"
+                  }
+                ]
+              }
+            },
+            "outputs": {
+              "output_1": {
+                "connections": []
+              }
+            },
+            "pos_x": 898,
+            "pos_y": 405
+          }
+        }
+      }
+    }
+  }

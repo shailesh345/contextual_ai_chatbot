@@ -1,0 +1,62 @@
+Continue
+Spin the wheel to win a 100% rebate deal for selected products.<br><button class="cmdText_Button" data-cmd="Spin the Wheel">Spin the Wheel</button>
+Spin the Wheel
+<img src="../static/img/spin.gif"><br>Congrats! You won a chance for a free Gya Labs Rose Otto Essential Oil after you complete a short survey.<br><button class="cmdText_Button" data-cmd="Ok, tell me more">Ok, tell me more</button><br><button class="cmdText_Button" data-cmd="No,thanks">No,thanks</button>
+Ok, tell me more
+<img src="../static/img/welcome.gif"><br>⭐TERMS AND POLICY⭐<br><br>You must agree to continue. If you violated the terms or policy at any time. We reserve the right to withhold your refund.<br><br>Please read the following carefully.<hr><br><br>​​✅ 1. Purchase this item at full price on Amazon to qualify.<br><br>✅ 2. We will send you a PayPal rebate for 100% of your purchase price (Minus TAX and SHIPPING)<br><br>✅ 3. We will notify you about the status of your rebate via EMAIL and SMS.<br><br>✅ 4. Canceling the order at any point after the rebate will get you banned from any future deals with us, and you will be reported.<br><br>✅ 5. Limit 1 rebate per customer, expires in one hour. Once the timer expires, your eligibility expires!<br><br><button class="cmdText_Button" data-cmd="Yes I Agree 🤝">Yes I Agree 🤝</button><br><button class="cmdText_Button" data-cmd="No thanks 😞">No thanks 😞</button>
+No,thanks
+-
+Yes I Agree 🤝
+Ok, so here's the deal...<br><brWe will give you access to this rebate deal after completing a short market research survey for us.<br><brAll you have to do is some browsing around on Amazon, then answer 3 questions.<br><br><button class="cmdText_Button" data-cmd="Proceed">Proceed</button><br><button class="cmdText_Button" data-cmd="No thanks">No thanks 😞</button>
+No thanks 😞
+-
+Proceed
+Go to amazon.com and search for "rose essential oil", then click on any of the top 3 results, look at the product information, and click below to start your survey.<br><br><button class="cmdText_Button" data-cmd="Start Survey">Start Survey</button>
+Start Survey
+How many product images does the listing have?<br><br><button class="cmdText_Button" data-cmd="1 to 5">1 to 5</button> &nbsp;&nbsp; <button class="cmdText_Button" data-cmd="'6+'">6+</button> 
+1 to 5
+-
+'6+'
+Does the product page contain any product videos?<br><br><button class="cmdText_Button" data-cmd="Yes">Yes</button> &nbsp;&nbsp; <button class="cmdText_Button" data-cmd="No">No</button> 
+Yes
+What is the ASIN of the product?<input type="text" data-cmd="API_CMD::FETCH-ASIN-INFO::" class="cmdText_Input"><br><br>(You can find this under Product Information)
+No
+-
+invalid_asin
+- Invalid ASIN, Please try again
+cmd_callback1
+Go back to Amazon.com (or the app) and stay on the search page you were just on, and look for Gya Labs Lemongrass Essential Oil.<br><br>(Please note you may have to scroll a bit to find it)<br><br>**Reminder, the product looks like this <br><br>👇👇
+cmd_callback2
+<img src="../static/img/gya_labs.jpg">
+cmd_callback3
+Now add Gya Labs Lemongrass Essential Oil to your cart, snap a screenshot, and send it here.<br><br><input type="file" name="user_input_img" value="Browse" class="msger-file-input" data-type="img" data-cmd-callbacks="cmd_callback4::cmd_callback5" data-cmd="API_CMD::UPLOAD-IMG-DATA::">
+cmd_callback4
+To ensure you have the correct product and unlock the next step.<br><br>Enter the product's correct price below
+cmd_callback5
+<button class="cmdText_Button" data-cmd="'5.99'">5.99</button> &nbsp;&nbsp; <button class="cmdText_Button" data-cmd="'6.99'">6.99</button> 
+'5.99'
+🎉 That's correct! 🎉<br><br>Make sure to order the CORRECT PRODUCT WITH THE CORRECT PRICE to avoid a hassle in getting your rebate.<br><br><br><br>Purchase the product and tap continue when you're ready. 👇 <br><br><br> <button class="cmdText_Button" data-cmd="ok_continue" data-cmd-callbacks="cmd_callback6">Ok , Continue</button>
+'6.99'
+-Ohh no
+ok_continue
+Awesome. Now let's verify your purchase before we can send your PayPal rebate!
+cmd_callback6
+What's your Amazon Order ID? <br><br>It looks something like this👇<br><br>123-4567890-1234567<br><br>Please enter your Order ID below👇<br><br><input type="text" data-cmd="API_CMD::FETCH-ORDER-INFO::" class="cmdText_Input">
+cmd_callback7
+Give us a moment to verify your Amazon Order ID.
+valid_order_id
+Ok, we've verified your order ID.Once we confirm that your order has been shipped, we will send you your PayPal rebate within 48 hours.
+cmd_callback8
+What is your PayPal email address?<br> <input type="text" data-cmd="API_CMD::VERIFY-PAYPAL-EMAIL::" class="cmdText_Input"><br><br><br>Tip: this is very important to get right because we cannot change it after the rebate has been issued!
+invalid_order_id
+You have entered an invalid Amazon Order ID. Please re-enter your order ID<br><br><button class="cmdText_Button" data-cmd="contact_support">Contact Support</button>
+cmd_callback9
+- verifying paypal email id
+cmd_callback10
+- confirming paypal email id
+invalid_paypal_email
+- Invalid paypal email
+contact_support
+- Customer Support Desk <br><br> Mail : help@rebateme.club , Live chat : <a href='' target='_blank'>Live chat</a>
+test1
+CALL_BACK_CMD::cmd_callback1::cmd_callback2::cmd_callback3
